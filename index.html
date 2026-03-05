@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Malik | Quant Researcher</title>
+    <meta name="description" content="Quant Researcher | Optimization & Stochastic Control | Market Microstructure">
+    <meta property="og:title" content="Yuvraj Malik | Quant Researcher">
+    <meta property="og:description" content="I build production-grade systems that learn, scale, and resist failure.">
+    <meta property="og:url" content="https://yuvraj-malik.netlify.app/">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <div class="nav-content">
+            <span class="brand">YM</span>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#engineering" class="nav-link">Engineering</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="hero fade-in">
+            <h1>Yuvraj Malik</h1>
+            <p class="subtitle">Quant Researcher | Optimization & Stochastic Control | Market Microstructure</p>
+            <p class="location">Salt Lake City, UT</p>
+            <div class="badges">
+                <span class="badge">Rust</span>
+                <span class="badge">Python</span>
+                <span class="badge">PyTorch</span>
+                <span class="badge">C++</span>
+            </div>
+            <p class="bio">I build production-grade systems that learn, scale, and resist failure. My work sits at the intersection of Low-Latency Systems (Rust/C++), Statistical Learning, and Market Microstructure.</p>
+            <div class="cta-buttons">
+                <a href="#engineering" class="btn btn-primary">View Projects</a>
+                <a href="mailto:yuvrajmalik2046@gmail.com" class="btn btn-outline">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://yuvraj-malik.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                <a href="https://www.linkedin.com/in/yuvrajmalik/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/developer-2046" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </section>
+
+        <section id="engineering" class="fade-in">
+            <h2>Flagship Engineering</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            The Terminal: Quant Analytics Platform
+                        </h3>
+                        <p class="meta">Rust (Core) • Python (FastAPI) • React • PyTorch • Black-Scholes</p>
+                    </div>
+                    <ul>
+                        <li><strong>Rust-Powered Backtester:</strong> Engineered a pyo3 binding to a Rust core, enabling lightning-fast simulation of tick-level strategies over multi-year datasets.</li>
+                        <li><strong>Market Entropy Engine:</strong> Implements Shannon Entropy on rolling correlation matrices (S&P 500 sectors) to detect regime shifts (Stable vs. Chaotic) in real-time.</li>
+                        <li><strong>Bayesian Signal Fusion:</strong> Uses a Bayesian inference engine to combine News Sentiment (LSTM) with volatility signals for dynamic conviction sizing.</li>
+                        <li><strong>Real-Time Greeks:</strong> Renders live options chains with Delta/Gamma/Theta calculations via a custom Black-Scholes implementation.</li>
+                    </ul>
+                    <a href="#" class="link">Learn more &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h.01"></path><path d="M7 20v-4"></path><path d="M12 20v-8"></path><path d="M17 20V8"></path><path d="M22 4v16"></path></svg>
+                            Air Quality Forecasting via Geometric Deep Learning
+                        </h3>
+                        <p class="meta award">NVIDIA's Choice Award (Breath of Fresh Air Hackathon)</p>
+                    </div>
+                    <ul>
+                        <li><strong>Model:</strong> Built a GCN-LSTM (Graph Convolutional Network + LSTM) to model air sensors as a graph, capturing non-Euclidean spatial dependencies.</li>
+                        <li><strong>Impact:</strong> Improved forecasting accuracy (R^2) from 0.642 to 0.872, outperforming standard time-series baselines.</li>
+                        <li><strong>Optimization:</strong> Optimized training pipelines on NVIDIA GPUs using mixed-precision tensors.</li>
+                    </ul>
+                    <a href="#" class="link">Learn more &rarr;</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            Maximum-Entropy Variational Inequality Solver
+                        </h3>
+                        <p class="meta award">COMAP MCM 2026 (Outstanding Winner Nominee - Team 2618069)</p>
+                    </div>
+                    <ul>
+                        <li><strong>The Math:</strong> Implemented the Mirror-Prox (Extragradient) algorithm to solve monotone Variational Inequalities (VIs) with O(1/t) convergence.</li>
+                        <li><strong>The Application:</strong> Reconstructed hidden "Fan Vote Shares" from binary elimination data (Dancing with the Stars), successfully converging on high-entropy distributions where standard solvers failed.</li>
+                    </ul>
+                    <a href="#" class="link">Learn more &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="fade-in">
+            <h2>Selected Research</h2>
+            <div class="research-items">
+                <article class="research-item">
+                    <h3>Linear Convergence of Projected Extragradient Methods</h3>
+                    <p class="meta">Submission: COLT 2026 (Computational Learning Theory)</p>
+                    <p>GDA oscillates/diverges in continuous games. Analyzed Tseng’s Forward-Backward-Forward scheme; proof of last-iterate linear convergence; introduced symmetric Jacobian certificates; extended to stochastic settings.</p>
+                </article>
+                <article class="research-item">
+                    <h3>Classifying Market Crashes via Spectral Entropy</h3>
+                    <p class="meta">Focus: Econophysics / Random Matrix Theory</p>
+                    <p>Eigen-entropy of financial correlation matrices (S&P 500, 2008–2024); isolates critical events by detecting breakdown in dominant market mode for regime-switching.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="achievements" class="fade-in">
+            <h2>Competitive Achievements</h2>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><strong>Intercollegiate Math Tournament (ICMT) 2026</strong></td>
+                            <td>Team: 5th / Individual: 11th | Power: 5th; Constellation: 7th</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lucid Software Global Programming</strong></td>
+                            <td>1st Place | Outperformed 500+ competitors (incl. PhDs) with a parallelized heuristic search in Rust.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MIT iQuHACK 2026</strong></td>
+                            <td>Top 6% (Global) | Rank 35/600. Built a quantum “peak-finder” pipeline to extract high-prob bitstrings from 46-qubit circuits.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>NVIDIA AI Hackathon</strong></td>
+                            <td>NVIDIA's Choice | Won “Best Model” for the GCN-LSTM air quality forecaster (R^2 = 0.872).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ICPC Rocky Mountain Regional</strong></td>
+                            <td>Rank 8 (Top 10) | Top University of Utah team. Solved 8/12 algorithmic problems under strict time constraints.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-in">
+            <h2>Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Languages</h3>
+                    <p>Python, Rust, C++, Java, SQL, Julia, R</p>
+                </div>
+                <div>
+                    <h3>Quant & ML</h3>
+                    <p>PyTorch, NumPy/Pandas, Scikit-learn, PyO3, Polars</p>
+                </div>
+                <div>
+                    <h3>Math</h3>
+                    <p>Convex Optimization, Stochastic Processes, Graph Theory, Random Matrix Theory</p>
+                </div>
+                <div>
+                    <h3>Infrastructure</h3>
+                    <p>Docker, Linux (Arch/Debian), Git, CI/CD, Grafana</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>“Don’t just learn code. Build with it, break it, and push it to the limit.”</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
